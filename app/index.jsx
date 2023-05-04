@@ -62,20 +62,22 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     paddingVertical: 100,
+    gap: 40
   },
   form: {
     alignItems: 'center',
     justifyContent: 'center',
+    width: "100%",
   },
   title: {
-    fontSize: 24,
+    fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
   },
   input: {
-    width: '85%',
+    width: '65%',
     height: 40,
     marginVertical: 10,
     paddingHorizontal: 10,
@@ -84,16 +86,17 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   buttons: {
-    width: '100%',
+    width: '65%',
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
   },
   button: {
     backgroundColor: '#007AFF',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    justifyContent: "center",
     borderRadius: 5,
     alignItems: 'center',
+    width: "35%",
+    aspectRatio: 2.10
   },
   buttonText: {
     color: '#fff',
