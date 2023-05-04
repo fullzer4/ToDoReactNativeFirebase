@@ -10,8 +10,8 @@ const App = () => {
 
   const router = useRouter()
 
-  const handle = async (event) => {
-    event.preventDefault();
+  const handle = async (e) => {
+    e.preventDefault();
 
     const novoUsuarioRef = await firebase.firestore().collection("Pessoas").add({
       nome: nome,
