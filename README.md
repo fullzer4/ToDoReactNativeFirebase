@@ -109,7 +109,7 @@ card de pessoas para ser renderizado na lista que recebe um item que seria os da
   );
 ```
 
-list para renderizar todos os components e criar o scroll de animacao. Na variavel pessoas recebe os dados dos objetos a serem criados o `renderItem={renderPessoa}` para renderizar o componente com os dados dos objetos keyExtractor para dar a key unica a cada objeto a ser criado e `contentContainerStyle={styles.list}` para estilizacao:
+list para renderizar todos os components e criar o scroll de animacao. Na variavel `data={pessoas}` recebe os dados dos objetos a serem criados o `renderItem={renderPessoa}` para renderizar o componente com os dados dos objetos  `keyExtractor={(item) => item.id}` para dar a key unica a cada objeto a ser criado e `contentContainerStyle={styles.list}` para estilizacao:
 ```javascript
     <FlatList
         data={pessoas}
